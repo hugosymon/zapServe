@@ -33,91 +33,52 @@
       <a href="#" class="botao-cta">Baixe o app agora</a>
     </section>
 
-    <!-- Seção de Carrossel de Serviços -->
+    <!-- Carrossel Interativo -->
     <section id="servicos" class="servicos">
       <h2>Serviços Disponíveis</h2>
       <div class="carrossel">
-        <figure class="item-carrossel">
-          <img src="/assets/images/encanador.jpg" alt="Encanador em ação" />
-          <figcaption>Encanadores</figcaption>
-        </figure>
-        <figure class="item-carrossel">
-          <img
-            src="/assets/images/eletricista.jpg"
-            alt="Eletricista trabalhando"
-          />
-          <figcaption>Eletricistas</figcaption>
-        </figure>
-        <figure class="item-carrossel">
-          <img
-            src="/assets/images/jardineiro.jpg"
-            alt="Jardineiro cuidando do jardim"
-          />
-          <figcaption>Jardineiros</figcaption>
-        </figure>
-        <figure class="item-carrossel">
-          <img
-            src="/assets/images/mecanico.jpg"
-            alt="Mecânico consertando um carro"
-          />
-          <figcaption>Mecânicos</figcaption>
-        </figure>
-        <figure class="item-carrossel">
-          <img src="/assets/images/encanador.jpg" alt="Pedreiro em obra" />
-          <figcaption>Pedreiros</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- Seção Benefícios -->
-    <section id="beneficios" class="beneficios">
-      <h2>Por que escolher o ZapServ?</h2>
-      <div class="container-beneficios">
-        <div class="item-beneficio">
-          <img
-            src="/assets/images/atendimentoRapido.png"
-            alt="Atendimento Rápido"
-          />
-          <p>Atendimento Rápido</p>
+        <button class="btn-prev">❮</button>
+        <div class="carrossel-itens">
+          <figure class="item-carrossel">
+            <img src="/assets/images/encanador.jpg" alt="Encanador em ação" />
+            <figcaption>Encanadores</figcaption>
+          </figure>
+          <figure class="item-carrossel">
+            <img
+              src="/assets/images/eletricista.jpg"
+              alt="Eletricista trabalhando"
+            />
+            <figcaption>Eletricistas</figcaption>
+          </figure>
+          <figure class="item-carrossel">
+            <img
+              src="/assets/images/jardineiro.jpg"
+              alt="Jardineiro cuidando do jardim"
+            />
+            <figcaption>Jardineiros</figcaption>
+          </figure>
+          <figure class="item-carrossel">
+            <img
+              src="/assets/images/mecanico.jpg"
+              alt="Mecânico consertando um carro"
+            />
+            <figcaption>Mecânicos</figcaption>
+          </figure>
+          <figure class="item-carrossel">
+            <img src="/assets/images/pedreiro.jpg" alt="Pedreiro em obra" />
+            <figcaption>Pedreiros</figcaption>
+          </figure>
         </div>
-        <div class="item-beneficio">
-          <img
-            src="/assets/images/profissionaisQualificados.png"
-            alt="Profissionais Qualificados"
-          />
-          <p>Profissionais Qualificados</p>
-        </div>
-        <div class="item-beneficio">
-          <img
-            src="/assets/images/precosAcessiveis.png"
-            alt="Preços Acessíveis"
-          />
-          <p>Preços Acessíveis</p>
-        </div>
+        <button class="btn-next">❯</button>
       </div>
-    </section>
-
-    <!-- Seção Depoimentos -->
-    <section id="depoimentos" class="depoimentos">
-      <h2>O que nossos clientes dizem?</h2>
-      <div class="item-depoimento">
-        <p>
-          "O ZapServ foi uma excelente escolha para resolver meus problemas de
-          encanamento rapidamente."
-        </p>
-        <p class="cliente">- João Silva</p>
-      </div>
-      <div class="item-depoimento">
-        <p>
-          "Encontrei um eletricista qualificado em minutos e o preço foi justo."
-        </p>
-        <p class="cliente">- Maria Oliveira</p>
-      </div>
+      <div class="indicadores"></div>
     </section>
 
     <!-- Rodapé -->
     <footer class="rodape">
       <p>&copy; 2024 ZapServ. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="/assets/js/carrossel.js"></script>
   </body>
 </html>

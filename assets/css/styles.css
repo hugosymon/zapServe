@@ -1,4 +1,4 @@
-/* Estilos globais e Barra de Navegação */
+/* Estilos Globais */
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +7,12 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     color: #424242;
     overflow-x: hidden;
 }
 
+/* Barra de Navegação */
 header.barra-de-navegacao {
     display: flex;
     justify-content: space-between;
@@ -43,7 +44,7 @@ header.barra-de-navegacao {
 }
 
 .barra-de-navegacao nav ul li a:hover {
-    background-color: #48CFCB;
+    background-color: #48cfcb;
     border-radius: 5px;
 }
 
@@ -51,7 +52,7 @@ header.barra-de-navegacao {
 .heroi {
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #48CFCB;
+    background-color: #48cfcb;
     color: white;
 }
 
@@ -76,125 +77,89 @@ header.barra-de-navegacao {
     font-size: 1.2rem;
 }
 
-/* Carrossel de Serviços */
-.servicos {
-    padding: 2rem;
-    text-align: center;
-}
-
-.servicos h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
+/* Carrossel */
 .carrossel {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    overflow-x: auto;
-    padding: 1rem;
+    position: relative;
+    overflow: hidden;
     max-width: 80%;
-    margin: auto;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrossel-itens {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .item-carrossel {
-    flex: 0 0 auto;
+    flex: 0 0 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 200px;
+    padding: 1rem;
 }
 
 .item-carrossel img {
     width: 100%;
-    height: 150px;
+    height: auto;
     object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 .item-carrossel figcaption {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #424242;
     text-align: center;
 }
 
-/* Benefícios */
-.beneficios {
-    padding: 2rem;
-    text-align: center;
-}
-
-.beneficios h2 {
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-}
-
-.container-beneficios {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    flex-wrap: wrap;
-    max-width: 90%;
-    margin: auto;
-}
-
-.item-beneficio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-}
-
-.item-beneficio img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0.5rem;
-}
-
-.item-beneficio p {
-    font-size: 1rem;
-    text-align: center;
-}
-
-/* Depoimentos */
-.depoimentos {
-    padding: 2rem;
-    text-align: center;
-}
-
-.depoimentos h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-}
-
-.item-depoimento {
-    margin-bottom: 1.5rem;
-}
-
-.item-depoimento p {
-    margin: 0.5rem 0;
-}
-
-.cliente {
-    font-style: italic;
-}
-
-/* Rodapé */
-.rodape {
-    background-color: #229799;
+.btn-prev,
+.btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+.indicadores {
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 10px;
+}
+
+.indicadores span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.indicadores span.active {
+    background-color: #229799;
 }
 
 /* Responsividade */
 @media (min-width: 1024px) {
-    .heroi {
-        padding: 5rem 2rem;
-    }
-
     .heroi h1 {
         font-size: 3rem;
     }
@@ -203,92 +168,23 @@ header.barra-de-navegacao {
         font-size: 1.5rem;
     }
 
-    .botao-cta {
-        font-size: 1.2rem;
-        padding: 1rem 2rem;
-    }
-
     .carrossel {
         max-width: 70%;
-    }
-
-    .item-carrossel {
-        width: 220px;
-    }
-
-    .container-beneficios {
-        max-width: 80%;
-    }
-
-    .item-beneficio {
-        width: 250px;
-    }
-
-    .depoimentos h2 {
-        font-size: 2.5rem;
-    }
-
-    .item-depoimento p {
-        font-size: 1.2rem;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .heroi h1 {
-        font-size: 2.5rem;
-    }
-
-    .heroi p {
-        font-size: 1.2rem;
-    }
-
-    .carrossel {
-        max-width: 95%;
-    }
-
-    .item-carrossel {
-        width: 180px;
-    }
-
-    .item-beneficio {
-        width: 180px;
     }
 }
 
 @media (max-width: 768px) {
-    .barra-de-navegacao nav ul {
-        flex-direction: column;
-        align-items: center;
-        display: none;
+    .item-carrossel img {
+        height: 200px;
     }
 
-    .barra-de-navegacao nav ul.active {
-        display: flex;
+    .btn-prev,
+    .btn-next {
+        padding: 8px;
     }
 
-    .heroi h1 {
-        font-size: 1.8rem;
-    }
-
-    .heroi p {
-        font-size: 0.9rem;
-    }
-
-    .carrossel {
-        flex-direction: row;
-        max-width: 100%;
-        overflow-x: scroll;
-    }
-
-    .item-carrossel {
-        width: 150px;
-    }
-
-    .item-beneficio {
-        width: 120px;
-    }
-
-    .depoimentos h2 {
-        font-size: 1.5rem;
+    .indicadores span {
+        width: 8px;
+        height: 8px;
     }
 }
