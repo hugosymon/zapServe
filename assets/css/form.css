@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #4CAF50;
+    --primary-hover: #45a049;
+    --text-color: #333;
+    --subtext-color: #666;
+    --background-color: #f4f4f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.service-card {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.service-card h2 {
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+.service-card p {
+    margin: 10px 0;
+    color: var(--subtext-color);
+}
+
+.service-card .schedule {
+    margin-top: 20px;
+}
+
+.service-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.service-card input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.service-card button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-card button:hover {
+    background-color: var(--primary-hover);
+}
+
+.confirmation {
+    display: none;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .service-card {
+        padding: 15px;
+    }
+
+    .service-card h2 {
+        font-size: 18px;
+    }
+
+    .service-card button {
+        font-size: 14px;
+    }
+}

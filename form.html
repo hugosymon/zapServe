@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Serviço</title>
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+    <div class="service-card">
+        <h2 id="service-title"></h2>
+        <p><strong>Cliente:</strong> <span id="client-name"></span></p>
+        <p><strong>Problema:</strong> <span id="problem-description"></span></p>
+        <p><strong>Endereço:</strong> <span id="client-address"></span></p>
+        <p><strong>Disponibilidade:</strong> <span id="availability"></span></p>
+
+        <div class="schedule">
+            <label for="appointment">Agendar Horário:</label>
+            <input type="datetime-local" id="appointment" aria-label="Escolha o horário para o agendamento">
+            <button onclick="scheduleService()" aria-label="Confirmar agendamento">Agendar</button>
+        </div>
+
+        <p class="confirmation" id="confirmation-message" role="alert">Horário agendado com sucesso!</p>
+    </div>
+
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
