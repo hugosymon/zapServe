@@ -37,3 +37,7 @@ function scheduleService() {
 
 // Carregar os detalhes do serviço quando a página é carregada
 document.addEventListener("DOMContentLoaded", loadServiceDetails);
+// Função para redirecionar à página inicial
+function goBack() {
+    window.location.href = "index.html";
+}
