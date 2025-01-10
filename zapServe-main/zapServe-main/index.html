@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZapServ - Marido de Aluguel</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/beneficios.css" />
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <header class="barra-de-navegacao">
+      <div class="logo">ZapServ</div>
+      <nav>
+        <ul>
+          <li><a href="#beneficios" class="botao-beneficios">Benefícios</a></li>
+          <li><a href="#contato" class="botao-contatos">Contato</a></li>
+          <li><a href="sobre.html" class"botao-sbre">Sobre</a></li>
+          <li><a href="loginpage.html" class="botao-login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <!-- Seção Bem-vindo -->
+      <section id="bem-vindo" class="heroi">
+        <h1>Bem-vindo ao ZapServ</h1>
+        <p>
+          O ZapServ é o seu parceiro confiável para conectar você aos melhores
+          profissionais de serviços gerais; seja para reparos em casa,
+          manutenção de eletrodomésticos, jardinagem, ou outros serviços de
+          "marido de aluguel".
+        </p>
+        <a href="#" class="botao-cta">Baixe o app agora</a>
+      </section>
+
+      <!-- Carrossel Interativo -->
+      <section id="servicos" class="servicos">
+        <h2 id="servDisp" class="servDisp">Serviços Disponíveis</h2>
+        <div class="carrossel">
+          <button class="btn-prev">❮</button>
+          <div class="carrossel-itens">
+            <figure class="item-carrossel">
+              <img src="/assets/images/encanador2.jpg" alt="Encanador em ação" />
+              <figcaption>Encanadores</figcaption>
+            </figure>
+            <figure class="item-carrossel">
+              <img
+                src="/assets/images/eletricista2.jpg"
+                alt="Eletricista trabalhando"
+              />
+              <figcaption>Eletricistas</figcaption>
+            </figure>
+            <figure class="item-carrossel">
+              <img
+                src="/assets/images/jardineiro2.jpg"
+                alt="Jardineiro cuidando do jardim"
+              />
+              <figcaption>Jardineiros</figcaption>
+            </figure>
+            <figure class="item-carrossel">
+              <img
+                src="/assets/images/mecanico2.jpg"
+                alt="Mecânico consertando um carro"
+              />
+              <figcaption>Mecânicos</figcaption>
+            </figure>
+            <figure class="item-carrossel">
+              <img src="/assets/images/pedreiro.jpg" alt="Pedreiro em obra" />
+              <figcaption>Pedreiros</figcaption>
+            </figure>
+          </div>
+          <button class="btn-next">❯</button>
+        </div>
+        <div class="indicadores"></div>
+      </section>
+
+      <!-- Beneficios -->
+      <section id="beneficios" class="beneficios">
+        <h2 id="benefiDisp" class="benefiDisp">Benefícios</h2>
+        <div class="carousel-container-benefi">
+          <div class="carousel-benefi">
+              <div class="carousel-item-benefi">
+                  <h2>Profissionais Verificados</h2>
+                  <p>Todos os profissionais passam por um rigoroso processo de verificação.</p>
+              </div>
+              <div class="carousel-item-benefi">
+                  <h2>Agendamento Fácil</h2>
+                  <p>Contrate serviços de forma rápida e simples pelo nosso aplicativo.</p>
+              </div>
+              <div class="carousel-item-benefi">
+                  <h2>Garantia de Qualidade</h2>
+                  <p>Se algo der errado, corrigimos o problema sem custo adicional.</p>
+              </div>
+              <div class="carousel-item-benefi">
+                  <h2>Suporte 24/7</h2>
+                  <p>Nossa equipe está sempre disponível para tirar suas dúvidas.</p>
+              </div>
+          </div>
+          <div class="controls-benefi">
+              <button class="control prev">&#8249;</button>
+              <button class="control next">&#8250;</button>
+          </div>
+          <div class="indicators-benefi">
+              <span class="indicator active-benefi" data-index="0"></span>
+              <span class="indicator" data-index="1"></span>
+              <span class="indicator" data-index="2"></span>
+              <span class="indicator" data-index="3"></span>
+          </div>
+      </div>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <section id="contato" class="contato">
+        <h2>Entre em Contato</h2>
+        <p>
+          Estamos prontos para ajudar! Entre em contato conosco pelos canais
+          abaixo:
+        </p>
+        <div class="contato-detalhes">
+          <div class="contato-item">
+            <i class="fas fa-phone-alt"></i>
+            <span><strong>Telefone:</strong> (11) 1234-5678</span>
+          </div>
+          <div class="contato-item">
+            <i class="fas fa-envelope"></i>
+            <span><strong>Email:</strong> contato@zapserv.com</span>
+          </div>
+          <div class="contato-item">
+            <i class="fab fa-whatsapp"></i>
+            <span>
+              <strong>WhatsApp:</strong>
+              <a href="https://wa.me/5511999999999" target="_blank"
+                >(11) 9 9876-54321</a
+              >
+            </span>
+          </div>
+          <div class="contato-item">
+            <i class="fas fa-share-alt"></i>
+            <span>
+              <strong>Redes Sociais:</strong>
+              <a href="https://facebook.com/zapserv" target="_blank">Facebook</a
+              >,
+              <a href="https://instagram.com/zapserv" target="_blank"
+                >Instagram</a
+              >
+            </span>
+          </div>
+        </div>
+      </section>
+      <p>&copy; 2024 ZapServ. Todos os direitos reservados.</p>
+      <p>
+        Desenvolvido por
+        <b href="https://brosInc.com" target="_blank">&reg Bros Inc</a>.
+      </p>
+    </footer>
+    <script src="/assets/js/carrossel.js"></script>
+    <script src="/assets/js/beneficios.js"></script>
+    <script src="/assets/js/navegacao.js"></script>
+  </body>
+</html>
