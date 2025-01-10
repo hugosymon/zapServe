@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesquisa de Serviços</title>
-    <link rel="stylesheet" href="t.css">
+    <link rel="stylesheet" href="pesquisa.css">
     <link rel="stylesheet" href="cardStyles.css">
 </head>
 <body>
     <div class="search-container">
-        <h1>Pesquisar Serviços</h1>
-        <form id="search-form">
-            <input type="text" id="search-box" placeholder="Digite o serviço desejado">
-            <label for="category-select">Categoria:</label>
+        <div class="search-box">
+            <h2>Pesquisar Serviços</h1>
+            <form id="search-form"">
+                <input type="text" id="search-box" placeholder="Digite o serviço desejado">
+        </div><h2>\
+        <div class="search-category">
+            <h2>Categoria:</h2>
             <select id="category-select">
                 <option value="">Selecione uma categoria</option>
                 <option value="eletrica">Elétrica</option>
@@ -20,8 +23,8 @@
                 <option value="jardinagem">Jardinagem</option>
                 <option value="limpeza">Limpeza</option>
             </select>
-            <button type="submit">Pesquisar</button>
-        </form>
+        </div>
+        <button id="btn-pesquisa" type="submit">Pesquisar</button>
     </div>
     <div class="container">
         <!-- Card 1 -->
